@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import styles from '@/assets/style/style.less';
+import style from '@/assets/style/style.less';
 
 /**
  * 顶部标题栏
@@ -13,7 +13,7 @@ export default class Header extends Component{
 
 	render(){
 		return (
-			<div className="header">
+			<div className={style.header}>
 				header
 			</div>
 		);

@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import style from '@/assets/style/style.less';
 
 export default class Content extends Component{
 	
@@ -8,10 +9,10 @@ export default class Content extends Component{
 
 	render(){
 		return (
-		 	<div cassName="footer">
-		 		
+		 	<div className={style.footer} >
+		 	      reack-study 版权所有 © 2018 kjtang
 		 	</div>
-			);
+		);
 	}
 
 }

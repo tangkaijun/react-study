@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import style from '@/assets/style/style.less';
+import {Router,Route,Switch} from 'react-router-dom';
 
 /**
   *右边主体内容
@@ -11,8 +13,15 @@ export default class Content extends Component{
 
 	render(){
 		return (
-			<div className="main-content">
-			    content
+			<div className={style.content}>
+			    {this.props.routes.map((route, index) => (
+		          <Route
+		            key={index}
+		            path={route.path}
+		            exact={route.exact}
+		            component={route.main}
+		          />
+		        ))}
 			</div>
 		);
 	}
